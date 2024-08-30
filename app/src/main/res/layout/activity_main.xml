@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <!-- Title Text -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tic Tac Toe"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000" />
+
+    <!-- 3x3 Grid Layout -->
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:rowCount="3"
+        android:columnCount="3">
+
+        <!-- 9 Buttons for the Grid -->
+        <Button
+            android:id="@+id/button00"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 1 column 1" />
+
+        <Button
+            android:id="@+id/button01"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 1 column 2" />
+
+        <Button
+            android:id="@+id/button02"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 1 column 3" />
+
+        <Button
+            android:id="@+id/button10"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 2 column 1" />
+
+        <Button
+            android:id="@+id/button11"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 2 column 2" />
+
+        <Button
+            android:id="@+id/button12"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 2 column 3" />
+
+        <Button
+            android:id="@+id/button20"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 3 column 1" />
+
+        <Button
+            android:id="@+id/button21"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 3 column 2" />
+
+        <Button
+            android:id="@+id/button22"
+            style="@style/TicTacToeButtonStyle"
+            android:contentDescription="Button at row 3 column 3" />
+    </GridLayout>
+
+    <!-- Reset Button -->
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset Game"
+        android:layout_below="@id/gridLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#F44336"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:contentDescription="Reset the game" />
+
+</RelativeLayout>
